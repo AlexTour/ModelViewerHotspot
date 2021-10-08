@@ -30,9 +30,8 @@
       hotspotButton.addEventListener('click', () => {
         if (modelViewer.paused) {
           modelViewer.play();
-        } else {
-          modelViewer.pause();
-        }
+          self.setTimeout(()=>{modelViewer.pause();}, 34880);
+        } 
       });
       </script>
     <!-- Loads <model-viewer> for browsers: -->
